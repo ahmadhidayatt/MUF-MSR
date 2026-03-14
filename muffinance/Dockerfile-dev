@@ -7,8 +7,7 @@ COPY --chown=1724:1724 ./KomiMUFCommonJDBCConn /data/wm/sag1015/IntegrationServe
 COPY --chown=1724:1724 ./KomiMUFCommonRCMapping /data/wm/sag1015/IntegrationServer/packages/KomiMUFCommonRCMapping
 COPY --chown=1724:1724 ./KomiMUFCommonMongoConn /data/wm/sag1015/IntegrationServer/packages/KomiMUFCommonMongoConn
 COPY --chown=1724:1724 ./0000873099_MicroservicesRuntime_100.xml /opt/softwareag/IntegrationServer/instances/default/config/licenseKey.xml
-COPY --chown=1724:1724 ./0000873099_MicroservicesRuntime_100.xml /opt/softwareag/IntegrationServer/instances/default/config/licenseKey.xml
-
+COPY --chown=1724:1724 ./WmJDBCAdapter /opt/softwareag/IntegrationServer/instances/default/packages/WmJDBCAdapter
 USER root
 RUN chmod -R 777 /opt/softwareag/
 
