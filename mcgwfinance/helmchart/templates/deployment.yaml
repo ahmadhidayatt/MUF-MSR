@@ -62,7 +62,7 @@ spec:
             protocol: TCP
           volumeMounts:
           - name: resolved-config
-            mountPath: /data/wm/mcgw1015/config/config.yml
+            mountPath: /opt/softwareag/Microgateway/config/config.yml
             subPath: config.yml
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
