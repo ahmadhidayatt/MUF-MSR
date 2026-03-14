@@ -5,14 +5,13 @@ metadata:
 data:
   application.properties: |
 {{- if eq .Values.env "dev" }}
-{{- (.Files.Glob "config/dev/appproperties.conf").AsConfig | nindent 3 }}
+{{ (.Files.Get "config/dev/appproperties.conf") | nindent 4 }}
 {{- else if eq .Values.env "uat" }}
-{{- (.Files.Glob "config/uat/appproperties.conf").AsConfig | nindent 3 }}
+{{ (.Files.Get "config/uat/appproperties.conf") | nindent 4 }}
 {{- else if eq .Values.env "prod" }}
-{{- (.Files.Glob "config/prod/appproperties.conf").AsConfig | nindent 3 }}
+{{ (.Files.Get "config/prod/appproperties.conf") | nindent 4 }}
 {{- else if eq .Values.env "proddrc" }}
-{{- (.Files.Glob "config/proddrc/appproperties.conf").AsConfig | nindent 3 }}
+{{ (.Files.Get "config/proddrc/appproperties.conf") | nindent 4 }}
 {{- else }}
-{{- (.Files.Glob "config/dev/appproperties.conf").AsConfig | nindent 3 }}
+{{ (.Files.Get "config/dev/appproperties.conf") | nindent 4 }}
 {{- end }}
- 

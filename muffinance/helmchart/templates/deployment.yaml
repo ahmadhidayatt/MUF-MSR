@@ -75,13 +75,13 @@ spec:
             protocol: TCP
           volumeMounts:
           - name: resolved-config
-            mountPath: /data/wm/sag1015/IntegrationServer/application.properties
+            mountPath: /opt/softwareag/IntegrationServer/instances/default/application.properties
             subPath: application.properties
           - name: config-volume-cache-config
-            mountPath: /data/wm/sag1015/IntegrationServer/config/Caching/cache.xml
+            mountPath: /opt/softwareag/IntegrationServer/instances/default/config/Caching/cache.xml
             subPath: cache.xml
           - name: log-storage
-            mountPath: /data/wm/sag1015/IntegrationServer/logs
+            mountPath: /opt/softwareag/IntegrationServer/instances/default/logs
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           livenessProbe:
