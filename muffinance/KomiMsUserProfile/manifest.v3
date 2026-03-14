@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="enabled">yes</value>
+  <value name="system_package">no</value>
+  <value name="version">1.0</value>
+  <null name="startup_services"/>
+  <null name="shutdown_services"/>
+  <null name="replication_services"/>
+  <null name="requires"/>
+  <null name="listACL"/>
+  <value name="webappLoad">yes</value>
+  <value name="reloadWithDependentPackage">yes</value>
+  <value name="build"></value>
+  <value name="description"></value>
+  <value name="created_date">16-01-2025 10:38:11 ICT</value>
+  <null name="extendedProperties"/>
+  <value name="name">KomiMsUserProfile</value>
+  <value name="time">2025-01-25 11:36:10 GMT</value>
+  <value name="jvm_version">17.0.12</value>
+  <value name="publisher">60f348e6d7ae</value>
+  <value name="patch_nums"></value>
+</Values>

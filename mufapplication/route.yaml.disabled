@@ -1,0 +1,26 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: {{ .Chart.Name }}
+  name: {{ .Chart.Name }}
+spec:
+  {{- if eq .Values.env "dev" }}
+  host: "{{ .Chart.Name }}{{ .Values.dev.host }}"
+  {{- else if eq .Values.env "uat" }}
+  host: "{{ .Chart.Name }}{{ .Values.uat.host }}"
+  {{- else if eq .Values.env "prod" }}
+  host: "{{ .Chart.Name }}{{ .Values.prod.host }}"
+  {{- else if eq .Values.env "proddrc" }}
+  host: "{{ .Chart.Name }}{{ .Values.proddrc.host }}"
+  {{- else }}
+  host: "{{ .Chart.Name }}{{ .Values.dev.host }}"
+  {{- end }}
+  path: 
+  port:
+    targetPort: {{ .Values.targetPort }}
+  to:
+    kind: Service
+    name: {{ .Chart.Name }}
+    weight: {{ .Values.service.weight }}
+  wildcardPolicy: None

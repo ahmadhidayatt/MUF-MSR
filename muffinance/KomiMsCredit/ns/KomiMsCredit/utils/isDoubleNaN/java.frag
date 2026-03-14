@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">isDoubleNaN</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vy
+c29yKCk7DQoJU3RyaW5nCWluaXRJbnB1dE51bWJlciA9IElEYXRhVXRpbC5nZXRTdHJpbmcoIHBp
+cGVsaW5lQ3Vyc29yLCAiaW5wdXROdW1iZXIiICk7DQpwaXBlbGluZUN1cnNvci5kZXN0cm95KCk7
+DQoNCkRvdWJsZSBpbnB1dE51bWJlciA9IHBhcnNlVG9Eb3VibGUoaW5pdElucHV0TnVtYmVyKTsN
+CkJvb2xlYW4gaXNEb3VibGVOYU4gPSBEb3VibGUuaXNOYU4oaW5wdXROdW1iZXIpOwkNCg0KLy8g
+cGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yXzEgPSBwaXBlbGluZS5nZXRDdXJz
+b3IoKTsNCklEYXRhVXRpbC5wdXQoIHBpcGVsaW5lQ3Vyc29yXzEsICJpc0RvdWJsZU5hTiIsIGlz
+RG91YmxlTmFOICk7DQpwaXBlbGluZUN1cnNvcl8xLmRlc3Ryb3koKTsNCgk=</value>
+</Values>

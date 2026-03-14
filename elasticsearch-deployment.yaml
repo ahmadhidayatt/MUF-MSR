@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: elasticsearch
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: elasticsearch
+  template:
+    metadata:
+      labels:
+        app: elasticsearch
+    spec:
+      containers:
+      - name: elasticsearch
+        image: localhost:15000/infra/elasticsearch:8.15.2
+        ports:
+        - containerPort: 9240
+        env:
+        - name: discovery.type
+          value: single-node
+        resources:
+          limits:
+            memory: "2Gi"
+          requests:
+            memory: "1Gi"

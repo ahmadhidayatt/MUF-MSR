@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">castDouble</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vy
+c29yKCk7DQpTdHJpbmcJb2JqSW5wdXQgPSBJRGF0YVV0aWwuZ2V0U3RyaW5nKCBwaXBlbGluZUN1
+cnNvciwgIm9iaklucHV0IiApOw0KcGlwZWxpbmVDdXJzb3IuZGVzdHJveSgpOw0KDQpkb3VibGUg
+cmVzdWx0ID0gcGFyc2VUb0RvdWJsZShvYmpJbnB1dCk7DQoNCi8vIHBpcGVsaW5lDQpJRGF0YUN1
+cnNvciBwaXBlbGluZUN1cnNvcl8xID0gcGlwZWxpbmUuZ2V0Q3Vyc29yKCk7DQpPYmplY3QgZG91
+YmxlUmVzdWx0ID0gbmV3IE9iamVjdCgpOw0KSURhdGFVdGlsLnB1dCggcGlwZWxpbmVDdXJzb3Jf
+MSwgImRvdWJsZVJlc3VsdCIsIHJlc3VsdCApOw0KcGlwZWxpbmVDdXJzb3JfMS5kZXN0cm95KCk7
+DQoJ</value>
+</Values>

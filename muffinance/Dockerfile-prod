@@ -1,0 +1,13 @@
+FROM ibmwebmethods.azurecr.io/webmethods-integrationserver:10.15
+
+COPY --chown=1724:1724 ./KomiMsUserProfile /data/wm/sag1015/IntegrationServer/packages/KomiMsUserProfile
+COPY --chown=1724:1724 ./KomiMsCredit /data/wm/sag1015/IntegrationServer/packages/KomiMsCredit
+COPY --chown=1724:1724 ./KomiMsEntry /data/wm/sag1015/IntegrationServer/packages/KomiMsEntry
+COPY --chown=1724:1724 ./KomiMUFCommonJDBCConn /data/wm/sag1015/IntegrationServer/packages/KomiMUFCommonJDBCConn
+COPY --chown=1724:1724 ./KomiMUFCommonRCMapping /data/wm/sag1015/IntegrationServer/packages/KomiMUFCommonRCMapping
+COPY --chown=1724:1724 ./KomiMUFCommonMongoConn /data/wm/sag1015/IntegrationServer/packages/KomiMUFCommonMongoConn
+
+USER root
+RUN chmod -R 777 /data/wm/sag1015/
+
+USER 1724

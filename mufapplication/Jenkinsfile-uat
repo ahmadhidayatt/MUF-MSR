@@ -1,0 +1,120 @@
+pipeline {
+    agent any
+    environment {
+        NEXUS_BASE_URL = 'svr-ocp-nex-d01.muf.co.id:5000' //url nexus
+        NEXUS_PROJECT = 'msr'
+        NEXUS_SUB_PROJECT = 'msruat'
+        PROJECT_NAME = 'esb-uat' //NAMESPACENAME ocp
+        OCP_API = 'https://api.ocp4dev.muf.co.id:6443'
+        IMAGE_PROJECT = "esb-uat"
+        IMAGE_NAME = "mufapplication"
+        IMAGE_ENV = "uat"
+        SIDECAR_IMAGE_PROJECT = "fluentd"
+        FLUENTD_VERSION = "v1.17-1.a5"
+        ESB_VERSION="10.15"
+        APP_NAME = "mufapplication"
+        KUBECONFIG = "/var/lib/jenkins/.kube/config-${APP_NAME}" // Set kubeconfig globally
+        IMAGE_ENVSUBST_NAME = "alpine-envsubst"
+        IMAGE_ENVSUBST_VERSION = "v1.0"
+        CONFIGMAP_REF_NAME = "mufapplication-config"
+        SECRET_REF_NAME = "mufapplication-secret"
+    }
+    stages {
+        stage('Source Code Checkout') {
+            steps {
+                script {
+                    checkout([$class: 'GitSCM',
+                              userRemoteConfigs: [[url: 'https://bitbucket.muf.co.id/scm/ip/mufapplication.git', credentialsId: 'id-bitbucket']],
+                              branches: [[name: '*/master']]
+                    ])
+                }
+            }
+        }
+        stage('Podman Build') {
+            steps {
+                script{
+                    sh "podman build --tls-verify=false -t ${NEXUS_BASE_URL}/${NEXUS_PROJECT}/${NEXUS_SUB_PROJECT}/${IMAGE_NAME}:${ESB_VERSION}-${BUILD_NUMBER} -f Dockerfile-uat ."
+                }
+            }
+        }
+        stage('Podman Push'){
+            steps{
+                withCredentials([usernamePassword(credentialsId: 'nexus-credentials', passwordVariable: 'password', usernameVariable: 'username')]) {
+                    sh "podman login --tls-verify=false ${NEXUS_BASE_URL} -u ${username} -p ${password}"
+                    sh "podman push --tls-verify=false ${NEXUS_BASE_URL}/${NEXUS_PROJECT}/${NEXUS_SUB_PROJECT}/${IMAGE_NAME}:${ESB_VERSION}-${BUILD_NUMBER}"
+                }
+            }
+        }
+        stage('Cleanup Podman Image') {
+            steps {
+                script {
+                    sh "podman rmi -f ${NEXUS_BASE_URL}/${NEXUS_PROJECT}/${NEXUS_SUB_PROJECT}/${IMAGE_NAME}:${ESB_VERSION}-${BUILD_NUMBER}"
+                }
+            }
+        }
+        stage('OCP Deployment'){
+            steps{
+                echo 'Login to OCP'
+                withCredentials([usernamePassword(credentialsId: 'custodian-ocp-credential', passwordVariable: 'password', usernameVariable: 'username')]) {
+                    sh "oc login ${OCP_API} -u ${username} -p ${password} --insecure-skip-tls-verify"
+
+                }
+                sh "oc project ${PROJECT_NAME}"
+
+                echo 'Deploy OCP - helm install or upgrade'
+                script {
+                    // Check if any pod related to the release exists
+                    def podCheckStatus = sh(script: "oc get pods -l app.kubernetes.io/name=${IMAGE_NAME} -n ${IMAGE_PROJECT} --ignore-not-found=true", returnStatus: true)
+                    def podCheckOutput = sh(script: "oc get pods -l app.kubernetes.io/name=${IMAGE_NAME} -n ${IMAGE_PROJECT} --ignore-not-found=true", returnStdout: true).trim()
+                    echo "Pod Check Status: ${podCheckStatus}"
+                    echo "Pod Check Output: ${podCheckOutput}"
+                    if (podCheckOutput.contains("NAME")) {
+                        // Pods exist, proceed with helm upgrade
+                        echo 'Pods exist, running helm upgrade'
+                        sh '''
+                            helm upgrade --install ${IMAGE_NAME} ./helmchart \
+                                --set env=${IMAGE_ENV} \
+                                --set image.repository=${NEXUS_BASE_URL}/${NEXUS_PROJECT}/${NEXUS_SUB_PROJECT} \
+                                --set image.tag=${ESB_VERSION}-${BUILD_NUMBER} \
+                                --set sidecarimage.repository=${NEXUS_BASE_URL}/${SIDECAR_IMAGE_PROJECT} \
+                                --set sidecarimage.tag=${FLUENTD_VERSION} \
+                                --set imageEnvSubst.repository=${NEXUS_BASE_URL}/${NEXUS_PROJECT}/${NEXUS_SUB_PROJECT} \
+                                --set imageEnvSubst.name=${IMAGE_ENVSUBST_NAME} \
+                                --set imageEnvSubst.tag=${IMAGE_ENVSUBST_VERSION} \
+                                --set configmap.ref=${CONFIGMAP_REF_NAME} \
+                                --set secret.ref=${SECRET_REF_NAME} \
+                                --namespace ${IMAGE_PROJECT}
+                        '''
+                    } else {
+                        // Pods do not exist, proceed with helm install
+                        echo 'No pods found, running helm install'
+                        sh '''
+                            helm install ${IMAGE_NAME} ./helmchart \
+                                --set env=${IMAGE_ENV} \
+                                --set image.repository=${NEXUS_BASE_URL}/${NEXUS_PROJECT}/${NEXUS_SUB_PROJECT} \
+                                --set image.tag=${ESB_VERSION}-${BUILD_NUMBER} \
+                                --set sidecarimage.repository=${NEXUS_BASE_URL}/${SIDECAR_IMAGE_PROJECT} \
+                                --set sidecarimage.tag=${FLUENTD_VERSION} \
+                                --set imageEnvSubst.repository=${NEXUS_BASE_URL}/${NEXUS_PROJECT}/${NEXUS_SUB_PROJECT} \
+                                --set imageEnvSubst.name=${IMAGE_ENVSUBST_NAME} \
+                                --set imageEnvSubst.tag=${IMAGE_ENVSUBST_VERSION} \
+                                --set configmap.ref=${CONFIGMAP_REF_NAME} \
+                                --set secret.ref=${SECRET_REF_NAME} \
+                                --namespace ${IMAGE_PROJECT}
+                        '''
+                    }
+                }
+            }
+        }
+        
+    }
+
+    post {
+        success {
+            echo "Deployment to ${IMAGE_ENV} successful!"
+        }
+        failure {
+            echo "Deployment to ${IMAGE_ENV} failed."
+        }
+    }
+}

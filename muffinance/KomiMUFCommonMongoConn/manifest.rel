@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">KomiMUFCommonMongoConn_20250310</value>
+  <value name="version">1.0</value>
+  <value name="build"></value>
+  <value name="patch_nums"></value>
+  <value name="description"></value>
+  <value name="target_pkg_version">1.0</value>
+  <value name="jvm_version">17.0.12</value>
+  <value name="source_server_version">10.15.0.0</value>
+  <value name="target_server_version">10.15.0.0</value>
+  <value name="time">2025-03-10 17:45:51 WIB</value>
+  <value name="type">full</value>
+  <null name="retainPatchHistory"/>
+  <value name="target_pkg_name">KomiMUFCommonMongoConn</value>
+  <value name="publisher">10.22.15.34</value>
+  <array name="files_to_delete" type="value" depth="1">
+  </array>
+</Values>

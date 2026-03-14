@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">convertMinusNumber</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vy
+c29yKCk7DQpTdHJpbmcJaW5wdXROdW1iZXIgPSBJRGF0YVV0aWwuZ2V0U3RyaW5nKCBwaXBlbGlu
+ZUN1cnNvciwgImlucHV0TnVtYmVyIiApOw0KcGlwZWxpbmVDdXJzb3IuZGVzdHJveSgpOw0KDQpE
+b3VibGUgbnVtYmVyID0gcGFyc2VUb0RvdWJsZShpbnB1dE51bWJlcik7DQpEb3VibGUgcmVzdWx0
+ID0gLW51bWJlcjsNCg0KLy8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yXzEg
+PSBwaXBlbGluZS5nZXRDdXJzb3IoKTsNCklEYXRhVXRpbC5wdXQoIHBpcGVsaW5lQ3Vyc29yXzEs
+ICJyZXN1bHQiLCByZXN1bHQgKTsNCnBpcGVsaW5lQ3Vyc29yXzEuZGVzdHJveSgpOw0KCQ==</value>
+</Values>

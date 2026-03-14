@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="msUserProfile" javaclass="com.wm.util.Values">
+    <value name="urlPath">restv2/KomiMsUserProfile.ws:msUserProfile</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+</Values>

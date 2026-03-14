@@ -1,0 +1,9 @@
+FROM docker.elastic.co/elasticsearch/elasticsearch:8.15.2
+
+ENV discovery.type=single-node
+ENV xpack.security.enabled=false
+ENV ES_JAVA_OPTS="-Xms1g -Xmx1g"
+
+COPY elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
+
+EXPOSE 9240 9340

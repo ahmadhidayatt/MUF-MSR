@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">convertDoubleToBigDecimal</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vy
+c29yKCk7DQpTdHJpbmcJaW5pdF90ZW1wX2VmZl9yYXRlID0gSURhdGFVdGlsLmdldFN0cmluZygg
+cGlwZWxpbmVDdXJzb3IsICJ0ZW1wX2VmZl9yYXRlIiApOw0KcGlwZWxpbmVDdXJzb3IuZGVzdHJv
+eSgpOw0KDQpEb3VibGUgdGVtcF9lZmZfcmF0ZSA9IHBhcnNlVG9Eb3VibGUoaW5pdF90ZW1wX2Vm
+Zl9yYXRlKTsNCmRvdWJsZSByZXN1bHQgPSBuZXcgQmlnRGVjaW1hbChEb3VibGUudG9TdHJpbmco
+dGVtcF9lZmZfcmF0ZSksIE1hdGhDb250ZXh0LlVOTElNSVRFRCkNCiAgICAgICAgLnNldFNjYWxl
+KDUsIFJvdW5kaW5nTW9kZS5IQUxGX1VQKQ0KICAgICAgICAuZG91YmxlVmFsdWUoKTsNCg0KLy8g
+cGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yXzEgPSBwaXBlbGluZS5nZXRDdXJz
+b3IoKTsNCi8vT2JqZWN0IHJlc3VsdCA9IG5ldyBPYmplY3QoKTsNCklEYXRhVXRpbC5wdXQoIHBp
+cGVsaW5lQ3Vyc29yXzEsICJyZXN1bHQiLCByZXN1bHQgKTsNCnBpcGVsaW5lQ3Vyc29yXzEuZGVz
+dHJveSgpOw0KCQ==</value>
+</Values>

@@ -1,0 +1,6 @@
+FROM 	ibmwebmethods.azurecr.io/microgateway:10.15
+COPY --chown=1724:1724 ./0000694545_Microgateway103.xml /opt/softwareag/Microgateway/config/license.xml
+USER root
+RUN chmod -R 777 /data/wm/
+
+USER 1724

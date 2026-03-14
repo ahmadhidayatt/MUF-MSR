@@ -1,0 +1,22 @@
+ports:
+  http: 9090
+api_gateway:
+  url: "https://octopusdrc.muf.co.id"
+  user: ${APIGW_USER}
+  password: ${APIGW_PASSWORD}
+  download_settings: true
+downloads:
+  apis: "apiMsApplicationPart, apiMsCredit"
+microgatewayPool:
+  microgatewayPoolName: mcgwfinance
+  microgatewayPoolDescription: Microgateways of apiMsApplicationPart
+applications_sync:
+  enabled: true
+  applications_to_sync: "registeredApplications"
+  polling_interval_secs: 10
+  connection_timeout_secs: 10 
+api_endpoint:
+  base_path: /
+  ignore_api_name: false
+logging:
+  level: ERROR

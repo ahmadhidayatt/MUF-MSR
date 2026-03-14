@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">validateRegex</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">SURhdGFDdXJzb3IgcGlwZWxpbmVDdXJzb3IgPSBwaXBlbGluZS5nZXRDdXJzb3IoKTsNCglTdHJp
+bmcJaW5wdXRTdHJpbmcgPSBJRGF0YVV0aWwuZ2V0U3RyaW5nKCBwaXBlbGluZUN1cnNvciwgImlu
+cHV0U3RyaW5nIiApOw0KCVN0cmluZwlpbnB1dFJlZ2V4ID0gSURhdGFVdGlsLmdldFN0cmluZygg
+cGlwZWxpbmVDdXJzb3IsICJpbnB1dFJlZ2V4IiApOw0KcGlwZWxpbmVDdXJzb3IuZGVzdHJveSgp
+Ow0KDQpib29sZWFuIHN0YXR1cyA9IGZhbHNlOw0KDQppZiAoaW5wdXRTdHJpbmcgIT0gbnVsbCAm
+JiBpbnB1dFJlZ2V4ICE9IG51bGwpIHsNCglzdGF0dXMgPSBQYXR0ZXJuLm1hdGNoZXMoaW5wdXRS
+ZWdleCwgaW5wdXRTdHJpbmcpOw0KfQ0KDQpJRGF0YUN1cnNvciBwaXBlbGluZUN1cnNvcl8xID0g
+cGlwZWxpbmUuZ2V0Q3Vyc29yKCk7DQpPYmplY3QgaXNWYWxpZCA9IG5ldyBPYmplY3QoKTsNCklE
+YXRhVXRpbC5wdXQoIHBpcGVsaW5lQ3Vyc29yXzEsICJpc1ZhbGlkIiwgc3RhdHVzICk7DQpwaXBl
+bGluZUN1cnNvcl8xLmRlc3Ryb3koKTsNCg0KCQ==</value>
+</Values>

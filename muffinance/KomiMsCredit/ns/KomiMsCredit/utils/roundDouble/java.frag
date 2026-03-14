@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">roundDouble</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vy
+c29yKCk7DQpTdHJpbmcgaW5pdF9kb3VibGVJbnB1dCA9IElEYXRhVXRpbC5nZXRTdHJpbmcoIHBp
+cGVsaW5lQ3Vyc29yLCAiZG91YmxlSW5wdXQiICk7DQpwaXBlbGluZUN1cnNvci5kZXN0cm95KCk7
+DQoNCmRvdWJsZSBkb3VibGVJbnB1dCA9IHBhcnNlVG9Eb3VibGUoaW5pdF9kb3VibGVJbnB1dCk7
+DQoNCmRvdWJsZSByZXN1bHQgPSBNYXRoLnJvdW5kKGRvdWJsZUlucHV0KTsNCg0KLy8gcGlwZWxp
+bmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yXzEgPSBwaXBlbGluZS5nZXRDdXJzb3IoKTsN
+Ck9iamVjdCBkb3VibGVPdXRwdXQgPSBuZXcgT2JqZWN0KCk7DQpJRGF0YVV0aWwucHV0KCBwaXBl
+bGluZUN1cnNvcl8xLCAiZG91YmxlT3V0cHV0IiwgcmVzdWx0ICk7DQpwaXBlbGluZUN1cnNvcl8x
+LmRlc3Ryb3koKTsNCgk=</value>
+</Values>

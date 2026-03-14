@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">outputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:inputData</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/orderId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/order_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/applicationId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/application_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/applicationDate;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/application_date;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/initialRecommendation;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/initial_recommendation;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/contractId;3;1" TO="/outputData;4;0;KomiMsEntry.docs:inputData/contract_id;3;1">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/pkPayung;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/pk_payung;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/purchaseOrderId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/purchase_order_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/confirmationLetterId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/confirmation_letter_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/applVaNo;3;1" TO="/outputData;4;0;KomiMsEntry.docs:inputData/appl_va_no;3;1">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/customerName;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/customer_name;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/branchCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/branch_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/branchDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/branch_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/sourceOrderCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/source_order_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/sourceOrderDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/source_order_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/sourceFormCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/source_form_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/sourceFormDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/source_form_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/currentFormCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/current_form_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/currentFormDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/current_form_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/orderCreatedDate;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/order_created_date;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/orderCreatedBy;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/order_created_by;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/applicantTypeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/applicant_type_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/applicantTypeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/applicant_type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/customerTypeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/customer_type_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/customerTypeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/customer_type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/channelCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/channel_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/channelDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/channel_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/outletChannelCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/outlet_channel_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/outletChannelDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/outlet_channel_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/orderMode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/order_mode;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/flagOrderType;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/flag_order_type;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/flagDataFormat;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/flag_data_format;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/flagMarketing;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/flag_marketing;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/flagTradeIn;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/flag_trade_in;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/promoCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/promo_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/insuranceComId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/insurance_com_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/insuranceComDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/insurance_com_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/mktProgramCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/mkt_program_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/mktProgramDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/mkt_program_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/financingObjCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/financing_obj_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/financingObjDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/financing_obj_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/screening1;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/screening_1;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/screening1Date;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/screening_1_date;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/screening2;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/screening_2;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/screening2Date;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/screening_2_date;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/screening3;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/screening_3;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/screening3Date;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/screening_3_date;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/gradingCustomerCategory;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/grading_customer_category;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/gradingSlik;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/grading_slik;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/gradingDealerMitra;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/grading_dealer_mitra;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/gradingEmployee;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/grading_employee;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/customerBehaviour;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/customer_behaviour;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/scoringDukcapil;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/scoring_dukcapil;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/prioritas;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/prioritas;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/kelengkapanDokumen;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/kelengkapan_dokumen;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/customerNo;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/customer_no;1;0">
+</MAPCOPY>
+</MAP>
+</FLOW>

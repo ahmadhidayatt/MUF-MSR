@@ -1,0 +1,12 @@
+FROM ibmwebmethods.azurecr.io/webmethods-integrationserver:10.15
+
+COPY --chown=1724:1724 ./KomiMsApplicationPart /opt/softwareag/IntegrationServer/instances/default/packages/KomiMsApplicationPart
+COPY --chown=1724:1724 ./KomiMUFCommonJDBCConn /opt/softwareag/IntegrationServer/instances/default/packages/KomiMUFCommonJDBCConn
+COPY --chown=1724:1724 ./KomiMUFCommonRCMapping /opt/softwareag/IntegrationServer/instances/default/packages/KomiMUFCommonRCMapping
+COPY --chown=1724:1724 ./WmJDBCAdapter /opt/softwareag/IntegrationServer/instances/default/packages/WmJDBCAdapter
+COPY --chown=1724:1724 ./0000873099_MicroservicesRuntime_100.xml /opt/softwareag/IntegrationServer/instances/default/config/licenseKey.xml
+
+USER root
+RUN chmod -R 777 /opt/softwareag/
+
+USER 1724

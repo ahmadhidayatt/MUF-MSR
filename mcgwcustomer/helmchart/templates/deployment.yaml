@@ -1,0 +1,90 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "mcgwcustomer.fullname" . }}
+  labels:
+    {{- include "mcgwcustomer.labels" . | nindent 4 }}
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "mcgwcustomer.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "mcgwcustomer.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "mcgwcustomer.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      volumes:
+        - name: config-template
+          configMap:
+            name: {{ .Chart.Name }}-config
+            items:
+              - key: config.yml
+                path: config.yml
+        - name: resolved-config
+          emptyDir: {}
+      initContainers:
+        - name: init-resolve-config
+          image: "{{ .Values.imageEnvSubst.repository }}/{{ .Values.imageEnvSubst.name }}:{{ .Values.imageEnvSubst.tag }}"
+          command: ["/bin/sh", "-c"]
+          args:
+            - |
+              envsubst < /template/config.yml > /resolved/config.yml
+          envFrom:
+            - secretRef:
+                name: {{ .Values.secret.ref }}
+          volumeMounts:
+            - name: config-template
+              mountPath: /template
+            - name: resolved-config
+              mountPath: /resolved
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}/{{ .Chart.Name }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+          - containerPort: {{ .Values.port }}
+            protocol: TCP
+          volumeMounts:
+          - name: resolved-config
+            mountPath: /opt/softwareag/Microgateway/config/config.yml
+            subPath: config.yml
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          livenessProbe:
+            {{- toYaml .Values.liveness | nindent 12 }}
+          readinessProbe:
+            {{- toYaml .Values.readiness | nindent 12 }}
+          env:
+          - name: TZ
+            value: Asia/Jakarta
+          - name: mcgw_logging_level
+            value: TRACE
+
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}

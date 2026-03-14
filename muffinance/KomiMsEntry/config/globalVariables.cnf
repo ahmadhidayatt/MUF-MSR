@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <array name="globalVariables" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">getNoOrder_url</value>
+        <value name="value">http://order-number-uat.apps.ocp4dev.muf.co.id/getNoOrder</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">getTimeConfirmation_url</value>
+        <value name="value">http://master-acq-param-java-uat.apps.ocp4dev.muf.co.id/getTimeConfirmation</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">linkDoc_url</value>
+        <value name="value">http://upload-image-base64-java-uat.apps.ocp4dev.muf.co.id/uploadImages</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">kafka_topic</value>
+        <value name="value">confirm_entry_form_manual</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">generateApplNo_url</value>
+        <value name="value">http://generate-appl-no-java-uat.apps.ocp4dev.muf.co.id/getApplNo</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">generateOidGroup_url</value>
+        <value name="value">http://oid-group-individu-acq-uat.apps.ocp4dev.muf.co.id/generateOidGroup</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">generateCustomerNo_url</value>
+        <value name="value">http://generate-customer-no-uat.apps.ocp4dev.muf.co.id/generateCustomerNo</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">getValidasiKonfirmasi_url</value>
+        <value name="value">http://api-konfirmasi-de-java-uat.apps.ocp4dev.muf.co.id/getValidasiKonfirmasi</value>
+        <value name="isSecure">false</value>
+      </record>
+    </array>
+  </record>
+</IDataXMLCoder>

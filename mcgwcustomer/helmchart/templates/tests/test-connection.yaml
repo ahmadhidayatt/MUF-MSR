@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "mcgwcustomer.fullname" . }}-test-connection"
+  labels:
+    {{- include "mcgwcustomer.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "mcgwcustomer.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never

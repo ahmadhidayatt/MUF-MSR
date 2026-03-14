@@ -1,0 +1,128 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "muffinance.fullname" . }}
+  labels:
+    {{- include "muffinance.labels" . | nindent 4 }}
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "muffinance.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "muffinance.selectorLabels" . | nindent 8 }}      
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "muffinance.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      volumes:
+        - name: config-template
+          configMap:
+            name: {{ .Chart.Name }}-app-properties-config
+            items:
+              - key: application.properties
+                path: appproperties.conf
+        - name: resolved-config
+          emptyDir: {}
+        - name: config-volume-fluentd-config
+          configMap:
+            name: {{ .Chart.Name }}-fluentd-config
+        - name: config-volume-cache-config
+          configMap:
+            name: {{ .Chart.Name }}-cache-config
+        - name: log-storage
+          emptyDir: {}
+      initContainers:
+        - name: init-resolve-config
+          image: "{{ .Values.imageEnvSubst.repository }}/{{ .Values.imageEnvSubst.name }}:{{ .Values.imageEnvSubst.tag }}"
+          command: ["/bin/sh", "-c"]
+          args:
+            - |
+              envsubst < /template/appproperties.conf > /resolved/application.properties
+          envFrom:
+            - secretRef:
+                name: {{ .Values.secret.ref }}
+            - configMapRef:
+                name: {{ .Values.configmap.ref }}
+          volumeMounts:
+            - name: config-template
+              mountPath: /template
+            - name: resolved-config
+              mountPath: /resolved
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}/{{ .Chart.Name }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: TZ
+              value: Asia/Jakarta
+          ports:
+          - containerPort: {{ .Values.service.port }}
+            protocol: TCP
+          volumeMounts:
+          - name: resolved-config
+            mountPath: /data/wm/sag1015/IntegrationServer/application.properties
+            subPath: application.properties
+          - name: config-volume-cache-config
+            mountPath: /data/wm/sag1015/IntegrationServer/config/Caching/cache.xml
+            subPath: cache.xml
+          - name: log-storage
+            mountPath: /data/wm/sag1015/IntegrationServer/logs
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          livenessProbe:
+            httpGet:
+              path: /invoke/wm.server/ping
+              port: 5555
+            timeoutSeconds: 5
+            initialDelaySeconds: 120
+            failureThreshold: 8
+            periodSeconds: 20
+            successThreshold: 1
+          startupProbe:
+            httpGet:
+              path: /health
+              port: 5555
+            timeoutSeconds: 5
+            initialDelaySeconds: 120
+            failureThreshold: 8
+            periodSeconds: 20
+            successThreshold: 1
+        - name: "{{ .Values.sidecarimage.name }}-{{ .Values.env }}"
+          image: "{{ .Values.sidecarimage.repository }}/fluentd:{{ .Values.sidecarimage.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          volumeMounts:
+          - name: config-volume-fluentd-config
+            mountPath: /fluentd/etc/fluent.conf
+            subPath: fluent.conf
+          - name: log-storage
+            readOnly: true
+            mountPath: /fluentd/log
+          resources:
+            {{- toYaml .Values.sidecarresources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}

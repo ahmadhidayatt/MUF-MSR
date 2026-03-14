@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Chart.Name }}-app-properties-config
+data:
+  application.properties: |
+{{- if eq .Values.env "dev" }}
+{{- (.Files.Glob "config/dev/appproperties.conf").AsConfig | nindent 3 }}
+{{- else if eq .Values.env "uat" }}
+{{- (.Files.Glob "config/uat/appproperties.conf").AsConfig | nindent 3 }}
+{{- else if eq .Values.env "prod" }}
+{{- (.Files.Glob "config/prod/appproperties.conf").AsConfig | nindent 3 }}
+{{- else if eq .Values.env "proddrc" }}
+{{- (.Files.Glob "config/proddrc/appproperties.conf").AsConfig | nindent 3 }}
+{{- else }}
+{{- (.Files.Glob "config/dev/appproperties.conf").AsConfig | nindent 3 }}
+{{- end }}
+ 

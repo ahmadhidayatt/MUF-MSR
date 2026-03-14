@@ -1,0 +1,2176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">outputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:inputData</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/orderId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/order_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/applicationId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/application_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/applicationDate;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/application_date;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/initialRecommendation;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/initial_recommendation;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/contractId;3;1" TO="/outputData;4;0;KomiMsEntry.docs:inputData/contract_id;3;1">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/pkPayung;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/pk_payung;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/purchaseOrderId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/purchase_order_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/confirmationLetterId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/confirmation_letter_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/applVaNo;3;1" TO="/outputData;4;0;KomiMsEntry.docs:inputData/appl_va_no;3;1">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/customerName;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/customer_name;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/branchCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/branch_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/branchDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/branch_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/sourceOrderCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/source_order_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/sourceOrderDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/source_order_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/sourceFormCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/source_form_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/sourceFormDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/source_form_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/currentFormCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/current_form_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/currentFormDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/current_form_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/orderCreatedDate;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/order_created_date;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/orderCreatedBy;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/order_created_by;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/applicantTypeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/applicant_type_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/applicantTypeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/applicant_type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/customerTypeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/customer_type_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/customerTypeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/customer_type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/channelCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/channel_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/channelDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/channel_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/outletChannelCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/outlet_channel_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/outletChannelDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/outlet_channel_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/orderMode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/order_mode;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/flagOrderType;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/flag_order_type;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/flagDataFormat;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/flag_data_format;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/flagMarketing;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/flag_marketing;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/flagTradeIn;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/flag_trade_in;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/promoCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/promo_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/insuranceComId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/insurance_com_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/insuranceComDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/insurance_com_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/mktProgramCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/mkt_program_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/mktProgramDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/mkt_program_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/financingObjCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/financing_obj_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/financingObjDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/financing_obj_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/screening1;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/screening_1;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/screening1Date;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/screening_1_date;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/screening2;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/screening_2;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/screening2Date;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/screening_2_date;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/screening3;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/screening_3;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/screening3Date;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/screening_3_date;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/gradingCustomerCategory;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/grading_customer_category;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/gradingSlik;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/grading_slik;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/gradingDealerMitra;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/grading_dealer_mitra;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/gradingEmployee;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/grading_employee;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/customerBehaviour;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/customer_behaviour;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/scoringDukcapil;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/scoring_dukcapil;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/prioritas;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/prioritas;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/kelengkapanDokumen;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/kelengkapan_dokumen;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/customerNo;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/customer_no;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT>debitur</COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">outputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:inputData</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">outputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:inputData</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturAreaDomisiliCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_area_domisili_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturAreaDomisiliDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_area_domisili_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturAreaBranchId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_area_branch_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturAreaBranchDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_area_branch_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturIdentityTypeId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_identity_type_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturIdentityTypeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_identity_type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturNoKtp;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_no_ktp;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturNamaSesuaiKtp;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_nama_sesuai_ktp;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturTempatLahir;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_tempat_lahir;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturTanggalLahir;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_tanggal_lahir;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturJenisKelamin;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_jenis_kelamin;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturStatusPerkawinan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_status_perkawinan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturStatusPerkawinanDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_status_perkawinan_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturNationalityId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_nationality_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturNationalityDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_nationality_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturNoHp1;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_no_hp_1;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturNoHp2;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_no_hp_2;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturEmail;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_email;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturFotoKtp;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_foto_ktp;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturFotoNpwp;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_foto_npwp;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturEducationId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_education_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturEducationDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_education_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturNumberOfDependent;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_number_of_dependent;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturMothersMaidenName;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_mothers_maiden_name;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturObligorId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_obligor_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/debiturGroupObligorId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/debitur_group_obligor_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/flagAlamatTagih;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/flag_alamat_tagih;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouseIdentityTypeId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouse_identity_type_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouseIdentityTypeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouse_identity_type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouseKtpNo;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouse_ktp_no;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouseKtpImage;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouse_ktp_image;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouseKtpName;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouse_ktp_name;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouseFullName;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouse_full_name;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouseDateOfBirthPlace;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouse_date_of_birth_place;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouseDateOfBirth;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/spouse_date_of_birth;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/jenisKelaminPasangan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/jenis_kelamin_pasangan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/statusHubunganPasanganCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/status_hubungan_pasangan_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/statusHubunganPasanganDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/spouse;2;0/status_hubungan_pasangan_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatKtp;2;0/alamat;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_ktp;2;0/alamat;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatKtp;2;0/rt;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_ktp;2;0/rt;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatKtp;2;0/rw;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_ktp;2;0/rw;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatKtp;2;0/kodePos;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_ktp;2;0/kode_pos;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatKtp;2;0/kodeKelurahan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_ktp;2;0/kode_kelurahan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatKtp;2;0/descKelurahan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_ktp;2;0/desc_kelurahan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatKtp;2;0/kodeKecamatan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_ktp;2;0/kode_kecamatan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatKtp;2;0/descKecamatan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_ktp;2;0/desc_kecamatan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatKtp;2;0/kodeKabKot;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_ktp;2;0/kode_kab_kot;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatKtp;2;0/descKabKot;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_ktp;2;0/desc_kab_kot;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatKtp;2;0/kodeProvinsi;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_ktp;2;0/kode_provinsi;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatKtp;2;0/descProvinsi;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_ktp;2;0/desc_provinsi;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatKtp;2;0/noTelephone;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_ktp;2;0/no_telephone;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatDomisili;2;0/alamat;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_domisili;2;0/alamat;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatDomisili;2;0/rt;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_domisili;2;0/rt;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatDomisili;2;0/rw;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_domisili;2;0/rw;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatDomisili;2;0/kodePos;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_domisili;2;0/kode_pos;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatDomisili;2;0/kodeKelurahan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_domisili;2;0/kode_kelurahan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatDomisili;2;0/descKelurahan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_domisili;2;0/desc_kelurahan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatDomisili;2;0/kodeKecamatan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_domisili;2;0/kode_kecamatan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatDomisili;2;0/descKecamatan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_domisili;2;0/desc_kecamatan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatDomisili;2;0/kodeKabKot;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_domisili;2;0/kode_kab_kot;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatDomisili;2;0/descKabKot;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_domisili;2;0/desc_kab_kot;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatDomisili;2;0/kodeProvinsi;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_domisili;2;0/kode_provinsi;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatDomisili;2;0/descProvinsi;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_domisili;2;0/desc_provinsi;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatDomisili;2;0/noTelephone;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_domisili;2;0/no_telephone;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatTagih;2;0/alamat;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_tagih;2;0/alamat;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatTagih;2;0/rt;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_tagih;2;0/rt;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatTagih;2;0/rw;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_tagih;2;0/rw;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatTagih;2;0/kodePos;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_tagih;2;0/kode_pos;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatTagih;2;0/kodeKelurahan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_tagih;2;0/kode_kelurahan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatTagih;2;0/descKelurahan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_tagih;2;0/desc_kelurahan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatTagih;2;0/kodeKecamatan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_tagih;2;0/kode_kecamatan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatTagih;2;0/descKecamatan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_tagih;2;0/desc_kecamatan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatTagih;2;0/kodeKabKot;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_tagih;2;0/kode_kab_kot;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatTagih;2;0/descKabKot;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_tagih;2;0/desc_kab_kot;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatTagih;2;0/kodeProvinsi;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_tagih;2;0/kode_provinsi;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatTagih;2;0/descProvinsi;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_tagih;2;0/desc_provinsi;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatDebitur;2;0/alamatTagih;2;0/noTelephone;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_debitur;2;0/alamat_tagih;2;0/no_telephone;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatKtp;2;0/alamat;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_ktp;2;0/alamat;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatKtp;2;0/rt;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_ktp;2;0/rt;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatKtp;2;0/rw;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_ktp;2;0/rw;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatKtp;2;0/kodePos;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_ktp;2;0/kode_pos;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatKtp;2;0/kodeKelurahan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_ktp;2;0/kode_kelurahan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatKtp;2;0/descKelurahan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_ktp;2;0/desc_kelurahan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatKtp;2;0/kodeKecamatan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_ktp;2;0/kode_kecamatan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatKtp;2;0/descKecamatan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_ktp;2;0/desc_kecamatan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatKtp;2;0/kodeKabKot;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_ktp;2;0/kode_kab_kot;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatKtp;2;0/descKabKot;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_ktp;2;0/desc_kab_kot;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatKtp;2;0/kodeProvinsi;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_ktp;2;0/kode_provinsi;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatKtp;2;0/descProvinsi;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_ktp;2;0/desc_provinsi;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatKtp;2;0/noTelephone;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_ktp;2;0/no_telephone;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatDomisili;2;0/alamat;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_domisili;2;0/alamat;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatDomisili;2;0/rt;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_domisili;2;0/rt;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatDomisili;2;0/rw;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_domisili;2;0/rw;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatDomisili;2;0/kodePos;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_domisili;2;0/kode_pos;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatDomisili;2;0/kodeKelurahan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_domisili;2;0/kode_kelurahan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatDomisili;2;0/descKelurahan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_domisili;2;0/desc_kelurahan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatDomisili;2;0/kodeKecamatan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_domisili;2;0/kode_kecamatan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatDomisili;2;0/descKecamatan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_domisili;2;0/desc_kecamatan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatDomisili;2;0/kodeKabKot;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_domisili;2;0/kode_kab_kot;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatDomisili;2;0/descKabKot;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_domisili;2;0/desc_kab_kot;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatDomisili;2;0/kodeProvinsi;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_domisili;2;0/kode_provinsi;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatDomisili;2;0/descProvinsi;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_domisili;2;0/desc_provinsi;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatDomisili;2;0/noTelephone;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_domisili;2;0/no_telephone;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatTagih;2;0/alamat;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_tagih;2;0/alamat;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatTagih;2;0/rt;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_tagih;2;0/rt;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatTagih;2;0/rw;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_tagih;2;0/rw;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatTagih;2;0/kodePos;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_tagih;2;0/kode_pos;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatTagih;2;0/kodeKelurahan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_tagih;2;0/kode_kelurahan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatTagih;2;0/descKelurahan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_tagih;2;0/desc_kelurahan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatTagih;2;0/kodeKecamatan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_tagih;2;0/kode_kecamatan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatTagih;2;0/descKecamatan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_tagih;2;0/desc_kecamatan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatTagih;2;0/kodeKabKot;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_tagih;2;0/kode_kab_kot;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatTagih;2;0/descKabKot;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_tagih;2;0/desc_kab_kot;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatTagih;2;0/kodeProvinsi;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_tagih;2;0/kode_provinsi;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatTagih;2;0/descProvinsi;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_tagih;2;0/desc_provinsi;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/alamatPasangan;2;0/alamatTagih;2;0/noTelephone;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/alamat_pasangan;2;0/alamat_tagih;2;0/no_telephone;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/occupationTypeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/occupation_type_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/occupationTypeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/occupation_type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturOccupationId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_occupation_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturOccupationDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_occupation_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturCompanyTypeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_company_type_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturCompanyTypeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_company_type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturNameOfWorkplace;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_name_of_workplace;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturPositionId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_position_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturPositionDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_position_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturWorkFieldsId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_work_fields_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturWorkFieldsDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_work_fields_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturEmployeeStatusId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_employee_status_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturEmployeeStatusDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_employee_status_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturEconomicSectorOneId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_economic_sector_one_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturEconomicSectorOneDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_economic_sector_one_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturEconomicSectorTwoId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_economic_sector_two_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturEconomicSectorTwoDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_economic_sector_two_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturEconomicSectorThreeId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_economic_sector_three_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturEconomicSectorThreeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_economic_sector_three_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturLocationId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_location_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturLocationDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_location_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturTotalPegawai;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_total_pegawai;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturTotalWorkingTimeYear;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_total_working_time_year;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturTotalWorkingTimeMonth;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_total_working_time_month;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debiturJoinIncomeFlag;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/debitur;2;0/debitur_join_income_flag;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouseOccupationId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouse_occupation_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouseOccupationDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouse_occupation_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouseTypeOfWorkplaceId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouse_type_of_workplace_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouseTypeOfWorkplaceDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouse_type_of_workplace_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouseNameOfWorkplace;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouse_name_of_workplace;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spousePositionId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouse_position_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spousePositionDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouse_position_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouseWorkFieldsId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouse_work_fields_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouseWorkFieldsDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouse_work_fields_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouseEmployeeStatusId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouse_employee_status_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouseEmployeeStatusDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouse_employee_status_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouseTotalWorkingTimeYear;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouse_total_working_time_year;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouseTotalWorkingTimeMonth;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/occupation;2;0/spouse;2;0/spouse_total_working_time_month;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturMainIncome;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_main_income;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturOperatingIncome;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_operating_income;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturCapitalCost;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_capital_cost;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturOperationalCost;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_operational_cost;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturOtherIncome;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_other_income;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturSourceOtherIncomeId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_source_other_income_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturSourceOtherIncomeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_source_other_income_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturMainSourceOfIncomeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_main_source_of_income_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturMainSourceOfIncomeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_main_source_of_income_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturGrossProfit;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_gross_profit;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturOperationalProfit;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_operational_profit;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturTotalOverallIncome;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_total_overall_income;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturCostOfLiving;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_cost_of_living;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturRestIncome;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_rest_income;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturMufInstallmentProposed;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_muf_installment_proposed;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturInstallmentMuf;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_installment_muf;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturOtherInstallment;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_other_installment;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturSpouseOtherInstallment;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_spouse_other_installment;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturTotalInstallmentOverall;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_total_installment_overall;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturDbr;3.4;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_dbr;3.4;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debiturDir;3.4;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/debitur;2;0/debitur_dir;3.4;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/spouse;2;0/spouseMainIncome;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/spouse;2;0/spouse_main_income;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/spouse;2;0/spouseSourceOfOtherIncomeId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/spouse;2;0/spouse_source_of_other_income_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/spouse;2;0/spouseSourceOfOtherIncomeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/spouse;2;0/spouse_source_of_other_income_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/spouse;2;0/spouseInstallmentMuf;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/spouse;2;0/spouse_installment_muf;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/debitur;2;0/personal;2;0/income;2;0/spouse;2;0/spouseOtherInstallment;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/debitur;2;0/personal;2;0/income;2;0/spouse;2;0/spouse_other_installment;1;0">
+</MAPCOPY>
+</MAP>
+
+<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT>identitas order</COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">outputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:inputData</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">outputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:inputData</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/outletCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/outlet_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/outletDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/outlet_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/jenisChannelCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/jenis_channel_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/jenisChannelDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/jenis_channel_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/outletChannelCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/outlet_channel_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/outletChannelDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/outlet_channel_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/financingTypeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/financing_type_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/financingTypeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/financing_type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/typeOfFinancingCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/type_of_financing_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/typeOfFinancingDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/type_of_financing_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/objPembiayaan;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/obj_pembiayaan;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/finSchemeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/fin_scheme_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/finSchemeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/fin_scheme_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/objPurposeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/obj_purpose_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/objPurposeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/obj_purpose_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/finPurposeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/fin_purpose_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/finPurposeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/fin_purpose_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/mktProductCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/mkt_product_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/mktProductDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/mkt_product_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/mktProgramCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/mkt_program_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/mktProgramDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/mkt_program_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/sumberNasabahCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/sumber_nasabah_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/sumberNasabahDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/sumber_nasabah_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/objekJaminanCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/objek_jaminan_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/objekJaminanDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/objek_jaminan_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/groupCustCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/group_cust_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/groupCustDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/group_cust_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/multiunit;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/multiunit;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/oldContractNo;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/old_contract_no;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/externalSalesForce;3;1" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/external_sales_force;3;1">
+</MAPCOPY>
+</MAP>
+
+<LOOP TIMEOUT="" IN-ARRAY="/inputData/detail/identitasOrder/internalSalesForce" OUT-ARRAY="/outputData/detail/identitas_order/internal_sales_force">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">outputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:inputData</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">outputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:inputData</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">$iteration</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesTypeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_type_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesTypeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesForceId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_force_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesForceDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_force_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesJobCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_job_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesJobDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_job_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesForceNo;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_force_no;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesForceNpk;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_force_npk;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesHeadNo;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_head_no;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesHeadNpk;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_head_npk;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesHeadId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_head_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesHeadName;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_head_name;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesHeadJobCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_head_job_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesHeadJobDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_head_job_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesBankCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_bank_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesBankAccNo;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_bank_acc_no;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/identitasOrder;2;0/internalSalesForce;2;0/internalSalesHpNo;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/identitas_order;2;0/internal_sales_force;2;0/internal_sales_hp_no;1;0">
+</MAPCOPY>
+</MAP>
+</LOOP>
+</SEQUENCE>
+
+<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT>object pembiayaan</COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">outputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:inputData</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">outputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:inputData</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objGroupCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_group_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objGroupDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_group_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/brandCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/brand_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/brandDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/brand_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/typeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/type_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/typeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/modelCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/model_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/modelDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/model_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/engCapacity;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/eng_capacity;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objWheel;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_wheel;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objInsrGroupCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_insr_group_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objInsrGroupDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_insr_group_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objMadeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_made_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objMadeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_made_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objPrice;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_price;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objYear;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_year;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objModelGroupCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_model_group_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objModelGroupDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_model_group_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/typeGenreCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/type_genre_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/typeGenreDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/type_genre_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objFuel;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_fuel;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objFuelDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_fuel_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/subTypeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/sub_type_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/subTypeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/sub_type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/natureOfFinancingCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/nature_of_financing_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/natureOfFinancingDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/nature_of_financing_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/downPayment;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/down_payment;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/disburseAmount;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/disburse_amount;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objMarketPrice;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_market_price;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/basicObjMarketPrice;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/basic_obj_market_price;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/persenUpping;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/persen_upping;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/maxLoan;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/max_loan;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/tenor;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/tenor;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objKaroseriCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_karoseri_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objKaroseriDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_karoseri_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objKaroseriCount;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_karoseri_count;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/objKaroseriPrice;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/obj_karoseri_price;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/plateColorCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/plate_color_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/plateColorDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/plate_color_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/unitAvailabilityCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/unit_availability_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/unitAvailabilityDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/unit_availability_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/mktSchemeId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/mkt_scheme_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/mktSchemeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/mkt_scheme_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/identitasBpkbCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/identitas_bpkb_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/identitasBpkbDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/identitas_bpkb_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/relationOfDebiturCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/relation_of_debitur_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/relationOfDebiturDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/relation_of_debitur_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/nameOfBpkb;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/name_of_bpkb;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/unitCount;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/unit_count;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/flagOffTheRoad;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/flag_off_the_road;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/supplier;2;0/supplierTypeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/supplier;2;0/supplier_type_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/supplier;2;0/supplierTypeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/supplier;2;0/supplier_type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/supplier;2;0/unitProviderCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/supplier;2;0/unit_provider_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/supplier;2;0/unitProviderDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/supplier;2;0/unit_provider_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/supplier;2;0/rekeningPackageId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/supplier;2;0/rekening_package_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/supplier;2;0/rekeningPackageCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/supplier;2;0/rekening_package_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/supplier;2;0/rekeningPackageDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/supplier;2;0/rekening_package_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/supplier;2;0/rekeningProductCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/supplier;2;0/rekening_product_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/supplier;2;0/rekeningProductDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/supplier;2;0/rekening_product_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/supplier;2;0/rekeningCommissionCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/supplier;2;0/rekening_commission_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/supplier;2;0/rekeningCommissionDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/supplier;2;0/rekening_commission_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/supplier;2;0/rekeningDiscountCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/supplier;2;0/rekening_discount_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/supplier;2;0/rekeningDiscountDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/supplier;2;0/rekening_discount_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/typeInstallmentCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/type_installment_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/typeInstallmentDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/type_installment_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/advanceArrearCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/advance_arrear_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/advanceArrearDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/advance_arrear_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/grossDp;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/gross_dp;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/nettDp;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/nett_dp;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/resikoJaminanCabang;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/resiko_jaminan_cabang;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/totalPrincipalAmount;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/total_principal_amount;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/persenLtv;3.4;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/persen_ltv;3.4;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/flagCalculate;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/flag_calculate;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/effRate;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/eff_rate;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/flatRate;3.4;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/flat_rate;3.4;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/installmentAmount;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/installment_amount;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/adminFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/admin_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/adminCreditFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/admin_credit_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/adminTotalFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/admin_total_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/provisiFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/provisi_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/provisiCreditFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/provisi_credit_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/provisiTotalFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/provisi_total_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/fiduciaFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/fiducia_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/fiduciaCreditFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/fiducia_credit_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/notarisFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/notaris_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/notarisCreditFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/notaris_credit_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/notarisTotalFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/notaris_total_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/totalInterestAmount;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/total_interest_amount;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/firstInstallmentAmount;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/first_installment_amount;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/lastInstallmentAmount;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/last_installment_amount;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/insurancePeriod;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/insurance_period;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/insuranceProrate;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/insurance_prorate;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/insuranceTenor;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/insurance_tenor;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/insuranceTypeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/insurance_type_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/insuranceTypeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/insurance_type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/insuranceCompanyId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/insurance_company_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/insuranceCompanyDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/insurance_company_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/insuranceAreaId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/insurance_area_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/insuranceAreaDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/insurance_area_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/insuranceFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/insurance_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/insuranceCreditFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/insurance_credit_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/insuranceTotalFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/insurance_total_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/objAge;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/obj_age;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/basicNettInsurance;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/basic_nett_insurance;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/basicGrossInsurance;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/basic_gross_insurance;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/defaultGrossInsurance;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/default_gross_insurance;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/nettRateInsurance;3.4;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/nett_rate_insurance;3.4;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/grossRateInsurance;3.4;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/gross_rate_insurance;3.4;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/flagInsurance;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/flag_insurance;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/flagSrcc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/flag_srcc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/flagFlh;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/flag_flh;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/flagTjh;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/flag_tjh;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/flagTs;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/flag_ts;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/flagEqts;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/flag_eqts;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/flagPaDriver;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/flag_pa_driver;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationInsurance;2;0/limitLiability;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_insurance;2;0/limit_liability;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationAdditionalInsurance;2;0/additionalInsuranceTypeCode;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_additional_insurance;2;0/additional_insurance_type_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationAdditionalInsurance;2;0/additionalInsuranceTypeDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_additional_insurance;2;0/additional_insurance_type_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationAdditionalInsurance;2;0/additionalInsuranceCompanyId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_additional_insurance;2;0/additional_insurance_company_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationAdditionalInsurance;2;0/additionalInsuranceCompanyDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_additional_insurance;2;0/additional_insurance_company_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationAdditionalInsurance;2;0/additionalInsuranceFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_additional_insurance;2;0/additional_insurance_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationAdditionalInsurance;2;0/additionalInsuranceCreditFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_additional_insurance;2;0/additional_insurance_credit_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationAdditionalInsurance;2;0/additionalInsuranceTotalFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_additional_insurance;2;0/additional_insurance_total_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationAdditionalInsurance;2;0/additionalNettInsurance;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_additional_insurance;2;0/additional_nett_insurance;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationAdditionalInsurance;2;0/additionalGrossInsurance;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_additional_insurance;2;0/additional_gross_insurance;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationAdditionalInsurance;2;0/additionalInsuranceNettRate;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_additional_insurance;2;0/additional_insurance_nett_rate;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationAdditionalInsurance;2;0/additionalInsuranceGrossRate;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_additional_insurance;2;0/additional_insurance_gross_rate;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationAdditionalInsurance;2;0/totalAsuransi;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_additional_insurance;2;0/total_asuransi;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationAdditionalInsurance;2;0/flagAdditionalInsurance;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_additional_insurance;2;0/flag_additional_insurance;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/refund;2;0/refundAdminFee;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/refund;2;0/refund_admin_fee;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/refund;2;0/refundBiayaBalikNama;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/refund;2;0/refund_biaya_balik_nama;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/refund;2;0/refundSupplierCommission;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/refund;2;0/refund_supplier_commission;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/refund;2;0/refundMaxMediatorCommission;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/refund;2;0/refund_max_mediator_commission;3.7;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/refund;2;0/refundDiscount;3.7;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/refund;2;0/refund_discount;3.7;0">
+</MAPCOPY>
+</MAP>
+
+<LOOP TIMEOUT="" IN-ARRAY="/inputData/detail/objectPembiayaan/calculationStructureCredit/amortisasi" OUT-ARRAY="/outputData/detail/object_pembiayaan/calculation_structure_credit/amortisasi">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">outputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:inputData</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">outputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:inputData</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">$iteration</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/amortisasi;2;0/installment;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/amortisasi;2;0/installment;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/amortisasi;2;0/interest;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/amortisasi;2;0/interest;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/amortisasi;2;0/principle;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/amortisasi;2;0/principle;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/amortisasi;2;0/outstanding;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/amortisasi;2;0/outstanding;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/amortisasi;2;0/outstandingInterest;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/amortisasi;2;0/outstanding_interest;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/objectPembiayaan;2;0/calculationStructureCredit;2;0/amortisasi;2;0/total;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/object_pembiayaan;2;0/calculation_structure_credit;2;0/amortisasi;2;0/total;1;0">
+</MAPCOPY>
+</MAP>
+</LOOP>
+</SEQUENCE>
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT>data kepemilikan</COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">outputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:inputData</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:saveEntryManualOrderRequestDoc</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">outputData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">KomiMsEntry.docs:inputData</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/dataKepemilikan;2;0/houseOfStatusId;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/data_kepemilikan;2;0/house_of_status_id;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/dataKepemilikan;2;0/houseOfStatusDesc;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/data_kepemilikan;2;0/house_of_status_desc;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/dataKepemilikan;2;0/yearOfLiving;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/data_kepemilikan;2;0/year_of_living;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/dataKepemilikan;2;0/monthOfLiving;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/data_kepemilikan;2;0/month_of_living;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/statusEntryFormManual;2;0/insertBy;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/status_entry_form_manual;2;0/insert_by;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/statusEntryFormManual;2;0/insertDate;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/status_entry_form_manual;2;0/insert_date;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/confirmationBy;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/confirmation_by;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/inputData;4;0;KomiMsEntry.docs:saveEntryManualOrderRequestDoc/detail;2;0/confirmationDate;1;0" TO="/outputData;4;0;KomiMsEntry.docs:inputData/detail;2;0/confirmation_date;1;0">
+</MAPCOPY>
+</MAP>
+
+<INVOKE TIMEOUT="" SERVICE="pub.flow:clearPipeline" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">clearPipelineInput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">preserve</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">1</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/preserve;1;1">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <array name="xml" type="value" depth="1">
+    <value>outputData</value>
+  </array>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">field</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">preserve</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">1</value>
+    <value name="field_opt">true</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <value name="is_soap_array_encoding_used">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+</INVOKE>
+</FLOW>
