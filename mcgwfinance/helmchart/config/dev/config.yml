@@ -6,7 +6,7 @@ api_gateway:
   password: ${APIGW_PASSWORD}
   download_settings: true
 downloads:
-  apis: "	Training_Arbi"
+  apis: "	Training00"
 microgatewayPool:
   microgatewayPoolName: mcgwfinance
   microgatewayPoolDescription: Microgateways of a	Training
