@@ -5,17 +5,16 @@
 replicaCount: 1
 name: "mcgwfinance"
 image:
-  repository: image-registry.openshift-image-registry.svc:5000
+  repository: localhost:15000/mcgwfinance
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: dev
 
 imageEnvSubst:
-  repository: image-registry.openshift-image-registry.svc:5000
-  pullPolicy: Always
-  # Overrides the image tag whose default is the chart appVersion.
-  name: ""
-  tag: ""
+  repository: localhost:15000
+  name: envsubst
+  tag: latest
+  pullPolicy: IfNotPresent
 
 secret:
   ref: mcgw-secret

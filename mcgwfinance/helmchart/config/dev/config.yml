@@ -1,15 +1,15 @@
 ports:
   http: 9090
 api_gateway:
-  url: "https://octopusdev.muf.co.id"
+  url: "http://100.87.70.99:25155/rest/apigateway"
   user: ${APIGW_USER}
   password: ${APIGW_PASSWORD}
   download_settings: true
 downloads:
-  apis: "apiMsApplicationPart, apiMsCredit"
+  apis: "	Training_Arbi"
 microgatewayPool:
   microgatewayPoolName: mcgwfinance
-  microgatewayPoolDescription: Microgateways of apiMsApplicationPart
+  microgatewayPoolDescription: Microgateways of a	Training
 applications_sync:
   enabled: true
   applications_to_sync: "registeredApplications"
